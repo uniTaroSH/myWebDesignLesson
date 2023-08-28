@@ -33,5 +33,23 @@
         <footer>
             <small>(C)2017 Hattori-studio.</small>
         </footer>
+        <textarea id="resultText" rows="5" cols="100" placeholder="出力結果"></textarea>
+        <br>
+        <button id="btn1">起動！</button>
+        <script type="text/javascript">
+            window.onload = function(){
+
+            }
+
+            let btn1 = document.getElementById("btn1");
+            let rt1 = document.getElementById("resultText");
+
+            btn1.addEventListener('click', hogehoge);
+
+            function hogehoge(){
+                console.log("押したよ");
+                rt1.value = "入力したぜ";
+            }
+        </script>
     </body>
 </html>
